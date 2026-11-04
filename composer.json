@@ -1,0 +1,47 @@
+{
+    "name": "swkweb/content-manager-netzp-migration",
+    "description": "Migrates NetzpBlog6 blog posts to the Content Manager",
+    "version": "1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "SWK Web",
+            "email": "info@swk-web.com",
+            "homepage": "https://www.swk-web.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "shopware/core": "~6.7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Swkweb\\ContentManagerNetzpMigration\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Swkweb\\ContentManagerNetzpMigration\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Swkweb\\ContentManagerNetzpMigration\\SwkwebContentManagerNetzpMigration",
+        "label": {
+            "en-GB": "Content Manager | Migration from NetzpBlog6",
+            "de-DE": "Content Manager | Migration von NetzpBlog6"
+        },
+        "description": {
+            "en-GB": "Moves the posts, authors, categories and layouts of the NetzpBlog6 blog to the Content Manager and reports data that cannot be moved.",
+            "de-DE": "Überträgt die Beiträge, Autoren, Kategorien und Layouts des NetzpBlog6-Blogs in den Content Manager und meldet Daten, die nicht übertragen werden können."
+        },
+        "manufacturerLink": {
+            "en-GB": "https://store.shopware.com/en/swkweb.html",
+            "de-DE": "https://store.shopware.com/swkweb.html"
+        },
+        "supportLink": {
+            "en-GB": "https://doku.swk-web.com",
+            "de-DE": "https://doku.swk-web.com"
+        }
+    }
+}

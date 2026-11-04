@@ -1,0 +1,7 @@
+include:
+  - component: $CI_SERVER_FQDN/shopware6/ci-components/shopware-plugin@1
+    inputs:
+      min-shopware-version: 'v6.7.5'
+      store-upload: false
+      store-info-push: false
+      strict-validate: false
